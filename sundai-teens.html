@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sundai Teens</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: white;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+
+
+        .hero-section {
+            background-color: #0f1419;
+            color: white;
+            text-align: center;
+            padding: 120px 40px;
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: normal;
+            margin-bottom: 30px;
+            letter-spacing: 4px;
+            font-family: 'Press Start 2P', monospace;
+            text-transform: uppercase;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #ccc;
+            font-family: 'Courier New', monospace;
+        }
+
+        .content-section {
+            background-color: white;
+            padding: 60px 0;
+            width: 100%;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #000;
+            font-family: 'Press Start 2P', monospace;
+            letter-spacing: 1px;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            margin-bottom: 35px;
+            color: #4a4a4a;
+            line-height: 1.7;
+        }
+
+        .what-we-do {
+            margin-bottom: 35px;
+        }
+
+        .what-we-do h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #000;
+            font-family: 'Press Start 2P', monospace;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .activity-list {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .activity-list li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .activity-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .activity-title {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .why-join {
+            margin-top: 35px;
+        }
+
+        .why-join h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #000;
+            font-family: 'Press Start 2P', monospace;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .why-join p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            line-height: 1.7;
+        }
+
+        .branches-section {
+            margin-top: 35px;
+        }
+
+        .branches-section h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #000;
+            font-family: 'Press Start 2P', monospace;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        .branch h4 {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .branch p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2rem;
+                letter-spacing: 2px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+            }
+            
+            .what-we-do h3, .why-join h3 {
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .content-section {
+                padding: 40px 20px;
+            }
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero-section">
+        <h1 class="hero-title">Sundai Teens</h1>
+    </section>
+
+    <section class="content-section">
+        <div class="content-container">
+            <div class="intro-section">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="intro-text">
+                    <p>Welcome to Sundai Teens, the youth branch of the Sundai Foundation.</p>
+                    <br>
+                    <p>Sundai Teens is a space created by teens, for teens — where high school students can come together to learn coding, build creative projects, and connect with each other. Whether you're a beginner just curious about tech or someone who already loves programming, this is a place to explore, grow, and vibe with other like-minded teens.</p>
+                </div>
+            </div>
+
+            <div class="what-we-do">
+                <h3>What We Do</h3>
+                <ul class="activity-list">
+                    <li><span class="activity-title">Learn to Code</span> Hands-on sessions where you'll learn the basics of web development, Python, and other creative coding tools.</li>
+                    <li><span class="activity-title">Build Projects</span> Work on fun, real-world projects that make an impact in your community.</li>
+                    <li><span class="activity-title">Join the Club</span> Get involved in the wider Sundai community and see how your skills can help build something bigger.</li>
+                    <li><span class="activity-title">Connect & Collaborate</span> Meet other high school students who share your interests in coding, design, and making things happen.</li>
+                </ul>
+            </div>
+
+            <div class="why-join">
+                <h3>Why Join Sundai Teens?</h3>
+                <p>Because coding isn't just about sitting behind a screen. It's about creating, problem-solving, and working with friends to build something new. At Sundai Teens, you'll pick up valuable skills, but you'll also find a community that encourages creativity, teamwork, and fun.</p>
+            </div>
+
+            <div class="branches-section">
+                <h3>Sundai Teens Branches</h3>
+                <div class="branch">
+                    <h4>Guilderland High School Sundai Teens Branch</h4>
+                    <p>Sundai Teens began at Guilderland High School, founded by Daniel Joseph. After joining the Sundai club and discovering a passion for coding and community, he wanted to bring that same experience to his school—sparking the start of Sundai Teens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
